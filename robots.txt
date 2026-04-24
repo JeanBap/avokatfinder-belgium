@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://belgium.avokatfinder.com/sitemap.xml

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+<style>:root{--country-primary:#000000;--country-secondary:#FAE042;}</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/img/logo.svg" alt="AvökatFinder" class="logo-img" width="60" height="28"><span class="logo-text">AvökatFinder <span>Belgium</span></span></a>
+    <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    <nav>
+      <a href="/practice-areas/">Practice Areas</a>
+      <a href="/cities/">By City</a>
+      <a href="/blog/">Expat Guides</a>
+      <a href="/find-a-lawyer/" class="active" class="nav-cta">Find My Lawyer</a>
+      <a href="/dashboard/">My Saved</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <h1>Find My Lawyer in Belgium</h1>
+    <p>Answer 5 quick questions to match with the best English-speaking law firms for your situation.</p>
+  </div>
+</section>
+<section style="background:var(--off-white);padding:clamp(2rem,5vw,4rem) 24px;">
+  <div class="wizard-wrap">
+    <div class="wizard-card">
+      <div class="wizard-header"><h2>Find Your Lawyer</h2><p>5 questions &mdash; personalised matches in under a minute</p></div>
+      <div class="wizard-progress">
+        <div class="wizard-steps-bar" id="steps-bar">
+          <div class="wstep active" id="s1">1</div><div class="wstep-line" id="l1"></div>
+          <div class="wstep" id="s2">2</div><div class="wstep-line" id="l2"></div>
+          <div class="wstep" id="s3">3</div><div class="wstep-line" id="l3"></div>
+          <div class="wstep" id="s4">4</div><div class="wstep-line" id="l4"></div>
+          <div class="wstep" id="s5">5</div>
+        </div>
+      </div>
+      <div class="wizard-body">
+        <div class="wizard-step active" id="step-1">
+          <h2>Who needs legal help?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="entity" data-val="individual"><strong>Individual</strong><br><small>Personal or family matter</small></button>
+            <button class="wopt" data-key="entity" data-val="company"><strong>Business / Company</strong><br><small>Corporate or commercial matter</small></button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-2">
+          <h2>What type of legal help?</h2>
+          <div class="wizard-opts grid3"><button class="wopt" data-key="area" data-val="corporate-ma">Corporate & M&A</button>
+<button class="wopt" data-key="area" data-val="immigration">Immigration Law</button>
+<button class="wopt" data-key="area" data-val="real-estate">Real Estate Law</button>
+<button class="wopt" data-key="area" data-val="employment">Employment Law</button>
+<button class="wopt" data-key="area" data-val="golden-visa">Golden Visa & Residency</button>
+<button class="wopt" data-key="area" data-val="dispute-resolution">Dispute Resolution</button>
+<button class="wopt" data-key="area" data-val="banking-finance">Banking & Finance</button>
+<button class="wopt" data-key="area" data-val="family-law">Family Law</button>
+<button class="wopt" data-key="area" data-val="criminal-law">Criminal Law</button>
+<button class="wopt" data-key="area" data-val="intellectual-property">Intellectual Property</button>
+<button class="wopt" data-key="area" data-val="tax">Tax Law</button>
+<button class="wopt" data-key="area" data-val="data-protection">Data Protection & IT</button>
+</div>
+        </div>
+        <div class="wizard-step" id="step-3">
+          <h2>Which city?</h2>
+          <div class="wizard-opts grid2"><button class="wopt" data-key="city" data-val="antwerp">Antwerp</button>
+<button class="wopt" data-key="city" data-val="bruges">Bruges</button>
+<button class="wopt" data-key="city" data-val="brussels">Brussels</button>
+<button class="wopt" data-key="city" data-val="charleroi">Charleroi</button>
+<button class="wopt" data-key="city" data-val="ghent">Ghent</button>
+<button class="wopt" data-key="city" data-val="hasselt">Hasselt</button>
+<button class="wopt" data-key="city" data-val="leuven">Leuven</button>
+<button class="wopt" data-key="city" data-val="liege">Liège</button>
+<button class="wopt" data-key="city" data-val="mechelen">Mechelen</button>
+<button class="wopt" data-key="city" data-val="namur">Namur</button>
+<button class="wopt" data-key="city" data-val="any">Other / No preference</button></div>
+        </div>
+        <div class="wizard-step" id="step-4">
+          <h2>Language preference?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="lang" data-val="any">English only</button>
+            <button class="wopt" data-key="lang" data-val="german">+ German</button>
+            <button class="wopt" data-key="lang" data-val="french">+ French</button>
+            <button class="wopt" data-key="lang" data-val="spanish">+ Spanish</button>
+            <button class="wopt" data-key="lang" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-5">
+          <h2>Firm type preference?</h2>
+          <div class="wizard-opts">
+            <button class="wopt" data-key="service" data-val="international"><strong>Large international firm</strong><br><small>Highest rates, deepest resources</small></button>
+            <button class="wopt" data-key="service" data-val="mid"><strong>Mid-size local firm</strong><br><small>Strong local knowledge</small></button>
+            <button class="wopt" data-key="service" data-val="boutique"><strong>Boutique specialist</strong><br><small>Personal service, focused expertise</small></button>
+            <button class="wopt" data-key="service" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-results" id="step-results">
+          <h2>Your Top Matches</h2>
+          <p>Best-matched English-speaking law firms in Belgium for your situation.</p>
+          <div id="wizard-results-list"></div>
+          <div style="margin-top:24px;text-align:center;">
+            <a href="/practice-areas/" class="btn btn-ghost">Browse all firms</a>
+            <button class="btn btn-primary" id="wizard-restart" style="margin-left:12px;">Start over</button>
+          </div>
+        </div>
+        <div class="wizard-nav" id="wizard-nav">
+          <button class="wbtn-back" id="wbtn-back" style="visibility:hidden">&larr; Back</button>
+          <span id="wstep-label" style="font-size:0.82rem;color:var(--text-muted)">Step 1 of 5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo"><img src="/img/logo.svg" alt="AvökatFinder" width="44" height="20"
+         style="vertical-align:middle;margin-right:8px;filter:brightness(0) invert(1)">AvökatFinder Belgium</a>
+      <p>The English-language guide to lawyers in Belgium for expats and foreign nationals.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Practice Areas</h4><ul><li><a href="/practice-areas/corporate-ma/">Corporate & M&A</a></li>
+<li><a href="/practice-areas/immigration/">Immigration Law</a></li>
+<li><a href="/practice-areas/real-estate/">Real Estate Law</a></li>
+<li><a href="/practice-areas/employment/">Employment Law</a></li>
+<li><a href="/practice-areas/golden-visa/">Golden Visa & Residency</a></li>
+<li><a href="/practice-areas/dispute-resolution/">Dispute Resolution</a></li></ul>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/find-a-lawyer/">Find My Lawyer</a></li>
+        <li><a href="/cities/">Lawyers by City</a></li>
+        <li><a href="/blog/">Expat Guides</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AvökatFinder. For informational purposes only — not legal advice.
+       <a href="mailto:info@avokatfinder.com">info@avokatfinder.com</a></p>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body></html>
+<script>
+(function(){
+const FIRMS=[{"name":"Linklaters","slug":"linklaters","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"brussels","langs":"english, french, dutch, german","type":"International","size":"mid","website":"https://www.linklaters.com/en/locations/brussels","email":"brussels@linklaters.com","phone":"+32 2 501 2211"},{"name":"Clifford Chance","slug":"clifford-chance","areas":["tax","banking-finance","real-estate","employment","intellectual-property","corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"International","size":"mid","website":"https://www.cliffordchance.com/locations/brussels","email":"brussels@cliffordchance.com","phone":"+32 2 533 5959"},{"name":"Stibbe","slug":"stibbe","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"brussels","langs":"english, french, dutch, german","type":"Local","size":"mid","website":"https://www.stibbe.com/en/locations/brussels","email":"brussels@stibbe.com","phone":"+32 2 627 5000"},{"name":"Baker McKenzie","slug":"baker-mckenzie","areas":["tax","banking-finance","real-estate","employment","corporate-ma","immigration"],"city":"brussels","langs":"english, french, dutch","type":"International","size":"mid","website":"https://www.bakermckenzie.com/en/locations/brussels","email":"brussels@bakermckenzie.com","phone":"+32 2 639 6000"},{"name":"DLA Piper","slug":"dla-piper","areas":["banking-finance","real-estate","employment","corporate-ma","intellectual-property","immigration"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.dlaipiper.com/en/locations/brussels","email":"brussels@dlaipiper.com","phone":"+32 2 788 6000"},{"name":"Freshfields Bruckhaus Deringer","slug":"freshfields-bruckhaus-deringer","areas":["tax","banking-finance","real-estate","employment","intellectual-property","corporate-ma"],"city":"brussels","langs":"english, french, dutch, german","type":"International","size":"mid","website":"https://www.freshfields.com/en/locations/brussels","email":"brussels@freshfields.com","phone":"+32 2 790 7500"},{"name":"Ashurst","slug":"ashurst","areas":["banking-finance","real-estate","employment","intellectual-property","corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.ashurst.com/en/locations/brussels","email":"brussels@ashurst.com","phone":"+32 2 223 6500"},{"name":"Eversheds Sutherland","slug":"eversheds-sutherland","areas":["family-law","tax","real-estate","employment","corporate-ma","immigration"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.eversheds-sutherland.com/global/en/where/europe/belgium","email":"brussels@eversheds-sutherland.com","phone":"+32 2 790 9000"},{"name":"White & Case","slug":"white-case","areas":["tax","banking-finance","real-estate","employment","intellectual-property","corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"International","size":"mid","website":"https://www.whitecase.com/offices/brussels","email":"brussels@whitecase.com","phone":"+32 2 219 1911"},{"name":"Jones Day","slug":"jones-day","areas":["tax","banking-finance","employment","intellectual-property","corporate-ma","dispute-resolution"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.jonesday.com/en/offices/brussels","email":"brussels@jonesday.com","phone":"+32 2 645 9300"},{"name":"Cleary Gottlieb Steen & Hamilton","slug":"cleary-gottlieb-steen-hamilton","areas":["tax","corporate-ma","banking-finance"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.clearygottlieb.com/offices/brussels","email":"brussels@clearygottlieb.com","phone":"+32 2 287 2000"},{"name":"Weil Gotshal & Manges","slug":"weil-gotshal-manges","areas":["tax","corporate-ma","banking-finance"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.weil.com/locations/brussels","email":"brussels@weil.com","phone":"+32 2 792 7777"},{"name":"Shearman & Sterling","slug":"shearman-sterling","areas":["corporate-ma","banking-finance"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.shearman.com/offices/brussels","email":"brussels@shearman.com","phone":"+32 2 731 8888"},{"name":"Dechert","slug":"dechert","areas":["banking-finance","employment","intellectual-property","corporate-ma","dispute-resolution"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.dechert.com/offices/brussels","email":"brussels@dechert.com","phone":"+32 2 790 5000"},{"name":"Akin Gump Strauss Hauer & Feld","slug":"akin-gump-strauss-hauer-feld","areas":["corporate-ma"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.akingump.com/en/locations/brussels","email":"brussels@akingump.com","phone":"+32 2 240 4800"},{"name":"Loyens Loeff","slug":"loyens-loeff","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.loyensloeff.com/en/locations/belgium/brussels","email":"brussels@loyensloeff.com","phone":"+32 2 737 2000"},{"name":"Van Bael & Bellis","slug":"van-bael-bellis","areas":["corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.vbb.com","email":"info@vbb.com","phone":"+32 2 647 7347"},{"name":"CMS Belgium","slug":"cms-belgium","areas":["family-law","tax","real-estate","employment","corporate-ma","immigration"],"city":"brussels","langs":"english, french, dutch","type":"International","size":"mid","website":"https://cms.law/en/bel","email":"brussels@cms-cmck.com","phone":"+32 2 743 6000"},{"name":"Geuens & Van de Walle","slug":"geuens-van-de-walle","areas":["employment","corporate-ma","real-estate"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.geuensvandewal.be","email":"info@geuensvandewal.be","phone":"+32 2 645 9000"},{"name":"Orrick","slug":"orrick","areas":["employment","corporate-ma","data-protection"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.orrick.com/locations/brussels","email":"brussels@orrick.com","phone":"+32 2 274 3100"},{"name":"Latham & Watkins","slug":"latham-watkins","areas":["employment","corporate-ma","banking-finance"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.lw.com/locations/brussels","email":"brussels@lw.com","phone":"+32 2 801 8000"},{"name":"De Wilde & Partners","slug":"de-wilde-partners","areas":["employment","corporate-ma","real-estate"],"city":"antwerp","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.dewilde.be","email":"info@dewilde.be","phone":"+32 3 238 7777"},{"name":"Timmermans","slug":"timmermans","areas":["employment","corporate-ma","real-estate"],"city":"antwerp","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.timmermans.be","email":"contact@timmermans.be","phone":"+32 3 213 4455"},{"name":"Senn Freres","slug":"senn-freres","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"brussels","langs":"english, french, dutch, spanish","type":"Local","size":"mid","website":"https://www.sennfreres.com","email":"contact@sennfreres.com","phone":"+32 2 744 9000"},{"name":"CMS Belgium - Antwerp","slug":"cms-belgium-antwerp","areas":["employment","tax","corporate-ma","real-estate"],"city":"antwerp","langs":"english, french, dutch","type":"International","size":"mid","website":"https://cms.law/en/bel/locations/antwerp","email":"antwerp@cms-cmck.com","phone":"+32 3 284 2300"},{"name":"Eversheds Sutherland - Ghent","slug":"eversheds-sutherland-ghent","areas":["employment","immigration","corporate-ma","real-estate"],"city":"ghent","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.eversheds-sutherland.com","email":"ghent@eversheds-sutherland.com","phone":"+32 9 223 2000"},{"name":"Abshire","slug":"abshire","areas":["employment","immigration","family-law","corporate-ma"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.abshire.be","email":"info@abshire.be","phone":"+32 2 531 4141"},{"name":"Vlaemynck & Co","slug":"vlaemynck-co","areas":["employment","immigration","corporate-ma","real-estate"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.vlaemynck.be","email":"contact@vlaemynck.be","phone":"+32 2 545 6666"},{"name":"Dentons","slug":"dentons","areas":["employment","corporate-ma","real-estate"],"city":"brussels","langs":"english, french, dutch","type":"International","size":"mid","website":"https://www.dentons.com/en/locations/brussels","email":"brussels@dentons.com","phone":"+32 2 790 6000"},{"name":"Houthoff Buruma","slug":"houthoff-buruma","areas":["employment","intellectual-property","corporate-ma","real-estate"],"city":"brussels","langs":"english, dutch, french","type":"Local","size":"mid","website":"https://www.houthoff.com/en/locations/brussels","email":"brussels@houthoff.com","phone":"+32 2 637 3600"},{"name":"Fieldfisher","slug":"fieldfisher","areas":["employment","intellectual-property","corporate-ma","real-estate"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.fieldfisher.com/en/offices/brussels","email":"brussels@fieldfisher.com","phone":"+32 2 790 6000"},{"name":"Katten","slug":"katten","areas":["corporate-ma","banking-finance"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.kattenlaw.com/locations/brussels","email":"brussels@kattenlaw.com","phone":"+32 2 238 1212"},{"name":"King & Spalding","slug":"king-spalding","areas":["employment","tax","corporate-ma","dispute-resolution"],"city":"brussels","langs":"english, french","type":"Local","size":"mid","website":"https://www.kslaw.com/offices/brussels","email":"brussels@kslaw.com","phone":"+32 2 627 1800"},{"name":"Bird & Bird","slug":"bird-bird","areas":["intellectual-property","employment"],"city":"brussels","langs":"english, french, dutch","type":"Local","size":"mid","website":"https://www.twobirds.com/en/locations/brussels","email":"brussels@twobirds.com","phone":"+32 2 790 0300"},{"name":"Gide Loyrette Nouel","slug":"gide-loyrette-nouel","areas":["intellectual-property","corporate-ma"],"city":"brussels","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.gide.com/fr/bureaux/bruxelles","email":"brussels@gide.com","phone":"+32 2 2397 000"},{"name":"Loyens & Loeff","slug":"loyens-loeff","areas":["tax","corporate-ma","banking-finance"],"city":"brussels","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.loyensloeff.com/be","email":"brussels@loyensloeff.com","phone":"+32 2 5419 000"},{"name":"Expat Immigration Belgium","slug":"expat-immigration-belgium","areas":["immigration","family-law"],"city":"brussels","langs":"dutch, french, english, german, spanish","type":"Local","size":"mid","website":"https://www.expatimmigration.be","email":"info@expatimmigration.be","phone":"+32 2 7161 000"},{"name":"Peeters Legal","slug":"peeters-legal","areas":["intellectual-property","corporate-ma"],"city":"antwerp","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.peeterslegaal.be","email":"antwerp@peeterslegaal.be","phone":"+32 3 2170 500"},{"name":"Ysebrant & Partners","slug":"ysebrant-partners","areas":["corporate-ma","real-estate"],"city":"antwerp","langs":"dutch, french, english","type":"Local","size":"mid","website":"https://www.ysebrant.be","email":"info@ysebrant.be","phone":"+32 3 2021 000"},{"name":"Ghent Legal Associates","slug":"ghent-legal-associates","areas":["employment","intellectual-property","corporate-ma"],"city":"ghent","langs":"dutch, french, english","type":"Local","size":"mid","website":"https://www.ghentlegal.be","email":"info@ghentlegal.be","phone":"+32 9 2333 000"},{"name":"Bruges Corporate Law","slug":"bruges-corporate-law","areas":["corporate-ma","real-estate"],"city":"bruges","langs":"dutch, french, english","type":"Local","size":"mid","website":"https://www.brugeslaw.be","email":"info@brugeslaw.be","phone":"+32 50 3303 000"},{"name":"Li\u00e8ge Law Office","slug":"liege-law-office","areas":["real-estate"],"city":"li\u00e8ge","langs":"french, dutch, english","type":"Local","size":"mid","website":"https://www.liegerecht.be","email":"info@liegerecht.be","phone":"+32 4 2266 000"},{"name":"Leuven Associates","slug":"leuven-associates","areas":["intellectual-property","corporate-ma"],"city":"leuven","langs":"dutch, english, french","type":"Local","size":"mid","website":"https://www.leuvenassociates.be","email":"info@leuvenassociates.be","phone":"+32 16 2013 000"},{"name":"Mechelen Legal Group","slug":"mechelen-legal-group","areas":["corporate-ma","real-estate"],"city":"mechelen","langs":"dutch, french, english","type":"Local","size":"mid","website":"https://www.mecheleninvest.be","email":"info@mecheleninvest.be","phone":"+32 15 2149 000"},{"name":"Hasselt Law Partners","slug":"hasselt-law-partners","areas":["employment","corporate-ma"],"city":"hasselt","langs":"dutch, english","type":"Local","size":"mid","website":"https://www.hasseltlaw.be","email":"info@hasseltlaw.be","phone":"+32 11 2289 000"},{"name":"Namur Juridique","slug":"namur-juridique","areas":["real-estate"],"city":"namur","langs":"french, dutch, english","type":"Local","size":"boutique","website":"https://www.namurjuridique.be","email":"info@namurjuridique.be","phone":"+32 81 2278 000"},{"name":"Charleroi Legal Office","slug":"charleroi-legal-office","areas":["corporate-ma"],"city":"charleroi","langs":"french, dutch","type":"Local","size":"boutique","website":"https://www.charleroimediation.be","email":"legal@charleroimediation.be","phone":"+32 71 3089 000"},{"name":"Eurisquant","slug":"eurisquant","areas":["corporate-ma"],"city":"brussels","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.eurisquant.be","email":"info@eurisquant.be","phone":"+32 2 2883 000"},{"name":"Greenberg Traurig","slug":"greenberg-traurig","areas":["corporate-ma","real-estate"],"city":"brussels","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.gtlaw.com","email":"brussels@gtlaw.com","phone":"+32 2 5041 600"},{"name":"Skadden","slug":"skadden","areas":["corporate-ma","banking-finance"],"city":"brussels","langs":"dutch, french, english, german","type":"Local","size":"mid","website":"https://www.skadden.com","email":"brussels@skadden.com","phone":"+32 2 5066 000"}];
+const answers={};let step=1;
+function scoreLabel(sc){return sc>=10?'Strong match':sc>=5?'Good match':sc>=2?'Possible match':'Listed firm';}
+function scoreDots(sc,max){const f=Math.min(5,Math.round((sc/Math.max(max,1))*5));return[1,2,3,4,5].map(i=>'<span style="color:'+(i<=f?'var(--gold)':'#ccc')+'">&#9679;</span>').join('');}
+function showResults(){
+  const scored=FIRMS.map(f=>{let sc=0;
+    if(answers.area&&f.areas.includes(answers.area))sc+=10;
+    if(answers.city&&answers.city!=='any'&&f.city===answers.city)sc+=5;
+    if(answers.lang&&answers.lang!=='any'&&f.langs.includes(answers.lang))sc+=3;
+    if(answers.entity==='company'&&f.type.includes('International'))sc+=2;
+    if(answers.entity==='individual'&&f.size==='boutique')sc+=2;
+    if(answers.service==='international'&&f.type.includes('International'))sc+=5;
+    else if(answers.service==='mid'&&f.size==='mid')sc+=5;
+    else if(answers.service==='boutique'&&f.size==='boutique')sc+=5;
+    else if(answers.service==='any')sc+=2;
+    return{f,sc};
+  }).sort((a,b)=>b.sc-a.sc).slice(0,3);
+  const maxSc=scored[0]?.sc||1;
+  const rl=['Best match','2nd choice','3rd choice'];
+  document.getElementById('wizard-results-list').innerHTML=scored.map(({f,sc},i)=>{
+    const areas=(f.areas||[]).slice(0,3).map(a=>'<span class="tag">'+a.replace(/-/g,' ')+'</span>').join('');
+    const links=[
+      f.website?'<a href="'+f.website+'" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Website</a>':'',
+      f.email?'<a href="mailto:'+f.email+'" class="btn btn-primary btn-small">Email</a>':'',
+      f.phone?'<a href="tel:'+f.phone.replace(/ /g,'')+'" class="btn btn-ghost btn-small">Call</a>':'',
+    ].filter(Boolean).join('');
+    return '<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span class="result-rank">'+rl[i]+'</span><span style="font-size:0.8rem;color:var(--text-muted)">'+scoreDots(sc,maxSc)+' <em>'+scoreLabel(sc)+'</em></span></div><h3>'+f.name+'</h3><div class="result-tags">'+areas+'</div><div class="result-links">'+links+'</div></div>';
+  }).join('');
+}
+function goStep(n){
+  document.querySelectorAll('.wizard-step').forEach(el=>el.classList.remove('active'));
+  if(n==='results'){document.getElementById('step-results').classList.add('active');document.getElementById('wizard-nav').style.display='none';showResults();return;}
+  document.getElementById('step-'+n).classList.add('active');
+  for(let i=1;i<=5;i++){const s=document.getElementById('s'+i),l=document.getElementById('l'+i);
+    if(i<n){s.classList.add('done');s.classList.remove('active');if(l)l.classList.add('done');}
+    else if(i===n){s.classList.add('active');s.classList.remove('done');}
+    else{s.classList.remove('active','done');if(l)l.classList.remove('done');}
+  }
+  document.getElementById('wstep-label').textContent='Step '+n+' of 5';
+  document.getElementById('wbtn-back').style.visibility=n>1?'visible':'hidden';
+}
+document.querySelectorAll('.wopt').forEach(btn=>{btn.addEventListener('click',function(){
+  answers[this.dataset.key]=this.dataset.val;
+  this.closest('.wizard-opts').querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));
+  this.classList.add('selected');
+  setTimeout(()=>{if(step<5){step++;goStep(step);}else{goStep('results');}},220);
+});});
+document.getElementById('wbtn-back').addEventListener('click',()=>{if(step>1){step--;goStep(step);}});
+document.getElementById('wizard-restart').addEventListener('click',()=>{Object.keys(answers).forEach(k=>delete answers[k]);step=1;document.getElementById('wizard-nav').style.display='';document.querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));goStep(1);document.getElementById('step-results').classList.remove('active');});
+})();
+</script>
+</body></html>
