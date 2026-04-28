@@ -1,0 +1,5 @@
+# AvökatFinder Belgium
+> English-speaking law firm directory for Belgium
+
+Directory: https://belgium.avokatfinder.com
+Email: info@avokatfinder.com
