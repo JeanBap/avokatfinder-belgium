@@ -1,5 +1,35 @@
 # AvökatFinder Belgium
-> English-speaking law firm directory for Belgium
+> The English-language directory of lawyers and law firms in Belgium for expats, foreign nationals and international businesses.
 
-Directory: https://belgium.avokatfinder.com
-Email: info@avokatfinder.com
+## Main Pages
+- https://belgium.avokatfinder.com/: Home — find an English-speaking lawyer in Belgium
+- https://belgium.avokatfinder.com/lawyers/: Directory of verified law firms and lawyers in Belgium
+- https://belgium.avokatfinder.com/glossary/: Legal glossary — plain-English definitions of Belgium legal terms
+- https://belgium.avokatfinder.com/blog/: Expat legal guides and property law articles for Belgium
+- https://belgium.avokatfinder.com/about/: About AvökatFinder Belgium
+- https://belgium.avokatfinder.com/contact/: Contact us
+
+## Legal Glossary Terms
+- https://belgium.avokatfinder.com/glossary/Emphyteuse/
+- https://belgium.avokatfinder.com/glossary/Superficie/
+- https://belgium.avokatfinder.com/glossary/Tierce-opposition/
+- https://belgium.avokatfinder.com/glossary/Usufruit/
+- https://belgium.avokatfinder.com/glossary/bailhuurcontract-lease/
+- https://belgium.avokatfinder.com/glossary/compromis-de-vente-preliminary-agreement/
+- https://belgium.avokatfinder.com/glossary/compromis-vente-be/
+- https://belgium.avokatfinder.com/glossary/erfpacht-be/
+- https://belgium.avokatfinder.com/glossary/hypothequehypotheek-mortgage/
+- https://belgium.avokatfinder.com/glossary/notaire-be/
+- https://belgium.avokatfinder.com/glossary/registratierechten/
+- https://belgium.avokatfinder.com/glossary/rijksregisternummer/
+
+## Site Info
+- Language: English
+- Audience: Expats, foreign nationals, international property buyers and businesses in Belgium
+- Content: Law firm directory, legal glossary, expat legal guides
+- Last updated: 2026-04-30
+- Sitemap: https://belgium.avokatfinder.com/sitemap.xml
+
+## Permissions
+User-agent: *
+Allow: /
